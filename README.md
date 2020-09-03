@@ -35,9 +35,9 @@ In my example I used a shared credentials file located in **`~/.aws/credentials`
  # 5. Cool part!
  One thing that blew my mind when I started to work with AWS was the fact that when you provison a EC2 instance you have an option called `"user data"` in the management console. There you could paste a bash script that will run after your instance is provisioned.<br/>
  This works in Terraform too! I used it actually in order to install and start  apache2 on the EC2 instance. I even added a short confirmation message to `index.html` page hosted by our web server. <br/>
- ![image](https://user-images.githubusercontent.com/24807183/92100719-6fa69e80-eddc-11ea-8864-d14689cd3c5c.png)
+ ![image](https://user-images.githubusercontent.com/24807183/92100719-6fa69e80-eddc-11ea-8864-d14689cd3c5c.png)<br/>
 
- <br/>
+ 
  ***Two things I forgot to mention:.***<br/> 
  ***Prior to all the deployment I created a key-pair in AWS and referenced its name in the terraform file. This key is used to connect to our instance using SSH.<br/>
  After deployment I modified the inbound rules for the default security group attached to my instance in order to allow HTTP and SSH traffic(ports 80 and 22).You could do this in Terraform too, just creating a security group resource and attaching it to our instance.***<br/>
