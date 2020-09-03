@@ -29,7 +29,9 @@ In my example I used a shared credentials file located in **`~/.aws/credentials`
  ![image](https://user-images.githubusercontent.com/24807183/92100248-d6778800-eddb-11ea-88d7-483473d8b7b2.png)
 
  # 4. Terraform apply
- This is the command that does the provisioning acording to your file. When running `terraform apply`, Terraform will talk with AWS API in order to deploy your infrastructure. You see the status of the deployment and you receive a confirmation message in case all was ok.
+ This is the command that does the provisioning acording to your file. When running `terraform apply`, Terraform will talk with AWS API in order to deploy your infrastructure. You see the status of the deployment and you receive a confirmation message in case all was ok.<br/>
+ ![image](https://user-images.githubusercontent.com/24807183/92100381-09ba1700-eddc-11ea-887a-6ab164740b93.png)
+
  # 5. Cool part!
  One thing that blew my mind when I started to work with AWS was the fact that when you provison a EC2 instance you have an option called `"user data"` in the management console. There you could paste a bash script that will run after your instance is provisioned.<br/>
  This works in Terraform too! I used it actually in order to install and start  apache2 on the EC2 instance. I even added a short confirmation message to `index.html` page hosted by our web server. <br/>
