@@ -41,6 +41,8 @@ In my example I used a shared credentials file located in **`~/.aws/credentials`
  After deployment I modified the inbound rules for the default security group attached to my instance in order to allow HTTP and SSH traffic(ports 80 and 22).You could do this in Terraform too, just creating a security group resource and attaching it to our instance.***<br/>
  # 6. Terraform destroy
  Running `terraform destroy` will destroy your current infrastructure. Let's say you provisioned many resources and you need to delete one of them. You could simply comment the code for that resource and run again `terraform apply` . `However, you need to be careful if you have resources depending on each other.`<br/>
+ ![image](https://user-images.githubusercontent.com/24807183/92100578-438b1d80-eddc-11ea-9e3d-1498d901f01d.png)
+
  It was a fun little project that taught me the basics of working with Terraform and I really feel I learned something new and useful.
  
  
