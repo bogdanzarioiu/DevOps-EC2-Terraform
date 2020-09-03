@@ -38,7 +38,7 @@ In my example I used a shared credentials file located in **`~/.aws/credentials`
  ![image](https://user-images.githubusercontent.com/24807183/92100719-6fa69e80-eddc-11ea-8864-d14689cd3c5c.png)<br/>
 
  
- ***Two things I forgot to mention:.***<br/> 
+ ***Two things I forgot to mention:***<br/> 
  ***Prior to all the deployment I created a key-pair in AWS and referenced its name in the terraform file. This key is used to connect to our instance using SSH.<br/>
  After deployment I modified the inbound rules for the default security group attached to my instance in order to allow HTTP and SSH traffic(ports 80 and 22).You could do this in Terraform too, just creating a security group resource and attaching it to our instance.***<br/>
  # 6. Terraform destroy
