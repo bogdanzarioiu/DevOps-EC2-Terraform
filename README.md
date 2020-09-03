@@ -20,6 +20,8 @@ provider "aws" {
 ```
 
 In my example I used a shared credentials file located in **`~/.aws/credentials`**. But you need to have AWS CLI previously installed in order for this to work.<br/>
+![image](https://user-images.githubusercontent.com/24807183/92100106-aaf49d80-eddb-11ea-88ae-664db53873c4.png)
+
 
 # 3. Terraform plan
  `terraform plan` does a dry-run of your code, it doesn't actually provision anything, but it shows you what would be provisioned if you apply your config file.
