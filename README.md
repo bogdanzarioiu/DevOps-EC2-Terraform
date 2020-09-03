@@ -26,6 +26,8 @@ In my example I used a shared credentials file located in **`~/.aws/credentials`
 # 3. Terraform plan
  `terraform plan` does a dry-run of your code, it doesn't actually provision anything, but it shows you what would be provisioned if you apply your config file.
  It's an optional step, but useful.<br/>
+ ![image](https://user-images.githubusercontent.com/24807183/92100248-d6778800-eddb-11ea-88d7-483473d8b7b2.png)
+
  # 4. Terraform apply
  This is the command that does the provisioning acording to your file. When running `terraform apply`, Terraform will talk with AWS API in order to deploy your infrastructure. You see the status of the deployment and you receive a confirmation message in case all was ok.
  # 5. Cool part!
