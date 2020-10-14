@@ -1,5 +1,5 @@
 # Provisioning an AWS EC2 instance with Terraform
-This is a small project in which I pvovisioned an EC2 instance on AWS using Terraform. The EC2 instance will act as a web server.<br/>
+This is a small project in which I provisioned an EC2 instance on AWS using Terraform. The EC2 instance will act as a web server.<br/>
 # 1. Downloading Terraform
 Terraform can be downloaded from here: https://www.terraform.io/downloads.html <br/>
 It is useful to add the binary to your PATH so it can be executed from any location. Running `terraform -v` should print `Terraform v0.13.1` since at the moment this is the latest version.<br/>
